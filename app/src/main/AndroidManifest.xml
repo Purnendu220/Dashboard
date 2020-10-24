@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.finertia.fisheries">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="in.finertia.fisheries.activity.YoutubePlayerActivity"></activity>
+        <activity
+            android:label="Video Gallery"
+            android:name="in.finertia.fisheries.activity.KnowledgeBaseActivity">
+        </activity>
+        <!--android:theme="@style/AppTheme.NoActionBar"-->
+        <activity
+            android:name="in.finertia.fisheries.activity.TrainingCalenderActivity"
+            android:label="Mark attendance" />
+        <activity
+            android:name="in.finertia.fisheries.activity.SplashActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/noActionBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="in.finertia.fisheries.activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="in.finertia.fisheries.activity.LoginActivity"
+            android:theme="@style/noActionBarTheme" />
+        <activity
+            android:name="in.finertia.fisheries.activity.SignUpActivity"
+            android:theme="@style/noActionBarTheme" />
+        <activity
+            android:name="in.finertia.fisheries.activity.OtpActivity"
+            android:theme="@style/noActionBarTheme" />
+        <activity
+            android:name="in.finertia.fisheries.activity.PasswordActivity"
+            android:theme="@style/noActionBarTheme" />
+        <activity
+            android:name="in.finertia.fisheries.activity.PersonDetailsActivity"
+            android:label="Person Details" />
+        <activity
+            android:name="in.finertia.fisheries.activity.LanguageSelectionActivity"
+            android:theme="@style/noActionBarTheme" />
+
+        <activity android:name="in.finertia.fisheries.activity.TrainingActivity"
+            android:label="Training Schedules"/>
+
+        <activity
+            android:name="in.finertia.fisheries.profilelisting.ProfileActivity"
+            android:theme="@style/noActionBarTheme" />
+        <activity
+            android:name="in.finertia.fisheries.profilelisting.ProfileListing"
+            android:theme="@style/noActionBarTheme" />
+    </application>
+
+</manifest>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/border_train_date">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:text="23"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMonthYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:text="JAN"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/border_train_details">
+
+        <TextView
+            android:id="@+id/tvTrainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fisherman training"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/tvTrainDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fisherman training"
+            android:layout_below="@id/tvTrainTitle"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_alignParentLeft="true"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

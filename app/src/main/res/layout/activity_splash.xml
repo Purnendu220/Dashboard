@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash_bg"
+    tools:context="in.finertia.fisheries.activity.SplashActivity">
+
+    <ImageView
+        android:id="@+id/gov_emb"
+        android:layout_width="150dp"
+        android:layout_height="210dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/indian_gov_logo_white" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="मत्स्यपालन विभाग"
+        android:gravity="center"
+        android:layout_below="@id/gov_emb"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tvDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Department of Fisheries"
+        android:gravity="center"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDepartment"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="E-Macchli App"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

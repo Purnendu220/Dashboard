@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    android:gravity="top"
+    android:layout_marginTop="@dimen/custom_margin_55dp">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/topNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_margin_60dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:paddingTop="@dimen/custom_margin_2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+          <!--  <ImageView
+                android:id="@+id/menu_nav_1"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/ic_listing_directory" />-->
+
+            <LinearLayout
+                android:id="@+id/layoutFisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/ivFisher"
+                    android:layout_width="@dimen/custom_margin_40dp"
+                    android:layout_height="@dimen/custom_margin_40dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/ic_fishers" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fishers"
+                    android:textSize="@dimen/text_view_size_12sp"
+                    android:textColor="@color/colorPrimary">
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/layoutFishFarmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/ivFishFarmer"
+                    android:layout_width="@dimen/custom_margin_40dp"
+                    android:layout_height="@dimen/custom_margin_40dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/ic_fish_farmer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fish Farmer"
+                    android:textSize="@dimen/text_view_size_12sp"
+                    android:textColor="@color/colorPrimary">
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <LinearLayout
+                android:id="@+id/layoutFishVendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/ivFishVendor"
+                    android:layout_width="@dimen/custom_margin_40dp"
+                    android:layout_height="@dimen/custom_margin_40dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/ic_fish_vendor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fish Vendors"
+                    android:textSize="@dimen/text_view_size_12sp"
+                    android:textColor="@color/colorPrimary">
+                </TextView>
+            </LinearLayout>
+            <!--android:tint="@android:color/white"
+            app:backgroundTint="@color/blue_900"
+            app:rippleColor="@android:color/white"-->
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <LinearLayout
+                android:id="@+id/layoutSupplier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/ivSupplier"
+                    android:layout_width="@dimen/custom_margin_40dp"
+                    android:layout_height="@dimen/custom_margin_40dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    app:srcCompat="@drawable/ic_supplier" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suppliers"
+                    android:textSize="@dimen/text_view_size_12sp"
+                    android:textColor="@color/colorPrimary">
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_fishers"
+            android:icon="@drawable/ic_fishers"
+            android:title="Fishers" />
+        <item
+            android:id="@+id/nav_fisherman"
+            android:icon="@drawable/ic_fish_farmer"
+            android:title="Fishermen" />
+        <item
+            android:id="@+id/nav_fishvendor"
+            android:icon="@drawable/ic_fish_vendor"
+            android:title="Fish vendors" />
+        <item
+            android:id="@+id/nav_buyers"
+            android:icon="@drawable/ic_buyer"
+            android:title="Buyers" />
+
+        <item
+            android:id="@+id/nav_supplier"
+            android:icon="@drawable/ic_supplier"
+            android:title="Suppliers" />
+
+        <item
+            android:icon="@drawable/ic_pmmsy"
+            android:title="PMMSY scheme" />
+
+        <item
+            android:id="@+id/training"
+            android:icon="@drawable/ic_training_calendar"
+            android:title="Training calender" />
+        <item
+            android:id="@+id/knowledgeBase"
+            android:icon="@drawable/ic_knowledge_base"
+            android:title="Knowledge base" />
+
+        <item
+            android:icon="@drawable/ic_realtime_weather"
+            android:title="Real time weather" />
+
+        <item
+            android:id="@+id/grievance"
+            android:icon="@drawable/ic_grievance"
+            android:title="Grievances" />
+
+        <item
+            android:icon="@drawable/ic_profile"
+            android:title="My profile" />
+
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/ic_about"
+            android:title="About us" />
+
+        <item
+            android:icon="@drawable/logout_icon"
+            android:title="Logout" />
+    </group>
+</menu>
